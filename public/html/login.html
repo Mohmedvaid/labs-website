@@ -54,12 +54,12 @@
           <h2 class="p-t-25">Get Started <br/> with your Dashboard</h2>
           <p class="mw-80 m-t-5">Sign in to your account</p>
           <!-- START Login Form -->
-          <form id="form-login" class="p-t-15" role="form" action="index.html">
+          <form id="form-login" class="p-t-15">
             <!-- START Form Control-->
             <div class="form-group form-group-default">
               <label>Login</label>
               <div class="controls">
-                <input type="text" name="username" placeholder="User Name" class="form-control" required>
+                <input type="text" name="email" placeholder="Email" class="form-control" value="test@test.com"required>
               </div>
             </div>
             <!-- END Form Control-->
@@ -67,7 +67,7 @@
             <div class="form-group form-group-default">
               <label>Password</label>
               <div class="controls">
-                <input type="password" class="form-control" name="password" placeholder="Credentials" required>
+                <input type="password" class="form-control" name="password" placeholder="Credentials" value="test123123" required>
               </div>
             </div>
             <!-- START Form Control-->
@@ -79,7 +79,7 @@
                 </div>
               </div>
               <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <button aria-label="" class="btn btn-primary btn-lg m-t-10" type="submit">Sign in</button>
+                <button id="btn-login" aria-label="" class="btn btn-primary btn-lg m-t-10" type="button">Sign in</button>
               </div>
             </div>
             <div class="m-b-5 m-t-30">
@@ -234,6 +234,7 @@
       <!-- END Overlay Content !-->
     </div>
     <!-- END OVERLAY -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- BEGIN VENDOR JS -->
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
     <!--  A polyfill for browsers that don't support ligatures: remove liga.js if not needed-->
